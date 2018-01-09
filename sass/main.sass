@@ -158,6 +158,7 @@
 
 .display-main-3
   min-height: 90vh
+  position: relative
   .wohnung
     text-align: center
     align-content: center
@@ -166,6 +167,46 @@
       font-size: 30px
       margin-top: 0
       margin-bottom: 90px
+  .overlay-wohnung-background
+    opacity: 0.5
+    background-color: $forth
+    content: ""
+    position: absolute
+    top: 25%
+    left: 35%
+    right: 35%
+    height: 45vh
+  .overlay-wohnung
+    text-align: center
+    color: $main
+    position: absolute
+    top: 25%
+    left: 35%
+    right: 35%
+    line-height: normal
+    height: 45vh
+    z-index: 1
+    p
+      font-size: 24px
+      line-height: 0.6
+    p:first-child
+      margin-bottom: 2em
+      font-size: 30px
+    .main-page-email
+      color: $forth
+      font-weight: 600
+      margin-bottom: 80px
+    .button-anfrage
+      color: $main
+      font-weight: 600
+      width: 260px
+      border-radius: 55px
+      font-size: 32px
+      padding: 20px 80px
+      cursor: pointer
+      background-color: $accent
+      &:hover
+        border: 2px solid $main
 
 .grid-item-wohnung
   &:nth-child(1)
@@ -203,6 +244,7 @@
   font-weight: 400
   padding: 20px 80px
   cursor: pointer
+  z-index: 15
   &:hover
     background-color: $accent
     color: $main

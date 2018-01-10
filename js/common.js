@@ -14,6 +14,12 @@ $(document).ready(function () {
             elem.css("opacity", 1);
         }
     });
+
+    $('#anfrage').click(function () {
+        $(".display-main-5").animate({
+            scrollDown: $('.display-main-5')[0].scrollHeight
+        }, 800);
+    });
 });
 
 window.onload = function() {

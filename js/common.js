@@ -18,5 +18,4 @@ $(document).ready(function () {
 
 window.onload = function() {
     $(".preloader").hide();
-
 }

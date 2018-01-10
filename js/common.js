@@ -15,10 +15,10 @@ $(document).ready(function () {
         }
     });
 
-    $('#anfrage').click(function () {
-        $(".display-main-5").animate({
-            scrollDown: $('.display-main-5')[0].scrollHeight
-        }, 800);
+    $('#anfrage, .button-anfrage').click(function () {
+        $("html").animate({
+            scrollTop: $(document).height() - $('.display-main-5')[0].scrollHeight
+        }, 1000);
     });
 });
 

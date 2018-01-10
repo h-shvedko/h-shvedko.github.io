@@ -58,6 +58,9 @@
   color: #fff
   background-color: $footer-background
   font-size: 20px
+  a
+    text-decoration: none
+    color: #fff
 
 .grid-second-display
   display: grid
@@ -288,11 +291,9 @@
     height: 19vh
     border: 1px solid $main
     padding: 15%
-    transition: transform .5s ease
     &:hover
       border: 1px solid $accent
       cursor: pointer
-      transform: scale(1.05)
     &:nth-child(1)
       grid-column: 1/2
       background: url(/img/main_wohnung1.jpeg)

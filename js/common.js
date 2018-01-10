@@ -20,6 +20,12 @@ $(document).ready(function () {
             scrollTop: $(document).height() - $('.display-main-5')[0].scrollHeight
         }, 1000);
     });
+
+    $('.grid-arrow-down i').click(function () {
+        $("html").animate({
+            scrollTop: $('.display-main-3')[0].scrollHeight
+        }, 1000);
+    });
 });
 
 window.onload = function() {

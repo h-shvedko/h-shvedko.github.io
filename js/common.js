@@ -16,12 +16,7 @@ $(document).ready(function () {
     });
 });
 
-function ready() {
-    hideElement();
-}
-
-document.addEventListener("DOMContentLoaded", ready);
-
-function hideElement(){
+window.onload = function() {
     $(".preloader").hide();
+
 }

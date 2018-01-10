@@ -10,18 +10,36 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <style>body {
-            opacity: 0;
-            overflow-x: hidden;
-        }
+        <style>
+            body {
+                opacity: 0;
+                overflow-x: hidden;
+            }
 
-        html {
-            background-color: #fff;
-        }</style>
+            .preloader{
+                color: white;
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: #000;
+                z-index: 10;
+            }
+
+            html {
+                background-color: #fff;
+            }
+        </style>
 
     </head>
 
     <body>
+    <div class="preloader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+    </div>
         <section class="display-main-1">
             <nav class="navigation grid-nav text-center">
                 <div class="navigation-content grid-item">Gästehaus Roddert</div>

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    setTimeout(hideElement(), 20000);
 
     $(document).click(function (e) {
         var container = $("#wohnungen");
@@ -16,6 +15,12 @@ $(document).ready(function () {
         }
     });
 });
+
+function ready() {
+    hideElement();
+}
+
+document.addEventListener("DOMContentLoaded", ready);
 
 function hideElement(){
     $(".preloader").hide();

@@ -1,3 +1,8 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('../js/service-worker.min.js')
+}
+
 $(document).ready(function () {
 
     $(document).click(function (e) {

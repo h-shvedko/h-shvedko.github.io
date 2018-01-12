@@ -34,5 +34,17 @@ $(document).ready(function () {
 });
 
 window.onload = function() {
-    $(".preloader").hide();
+    // $(".preloader").hide();
+    $('.display-main-1').css('background', 'url(/img/main_background.jpeg)');
+
+    $('.grid-second-menu .grid-item:nth-child(1)').css('background', 'url(/img/main_wohnung1.jpeg)');
+    $('.grid-second-menu .grid-item:nth-child(2)').css('background', 'url(/img/main_wohnung2.jpeg)');
+    $('.grid-second-menu .grid-item:nth-child(3)').css('background', 'url(/img/main_wohnung3.jpeg)');
+    $('.grid-second-menu .grid-item:nth-child(4)').css('background', 'url(/img/main_wohnung4.jpeg)');
+
+    $('.grid-third-display .grid-item:nth-child(1)').css('background', 'url(/img/main_wohnung1.jpeg)');
+    $('.grid-third-display .grid-item:nth-child(2)').css('background', 'url(/img/main_wohnung2.jpeg)');
+    $('.grid-third-display .grid-item:nth-child(3)').css('background', 'url(/img/main_wohnung3.jpeg)');
+    $('.grid-third-display .grid-item:nth-child(4)').css('background', 'url(/img/main_wohnung4.jpeg)');
+    $('.map iframe').attr('src', 'https://www.google.com/maps/embed/v1/place?q=place_id:ChIJy0ZcLb_UpEcRiakz-DaIkq8&key=AIzaSyD6CHCQODTf_Xp8WF1BOxTBmvU8inT4Q60');
 }

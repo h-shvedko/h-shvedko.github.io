@@ -2,6 +2,12 @@ var cacheName = 'GR';
 var filesToCache = [
     '/',
     '../index.html',
+    '../img/main_background.jpeg',
+    '../img/main_wohnung1.jpeg',
+    '../img/main_wohnung2.jpeg',
+    '../img/main_wohnung3.jpeg',
+    '../img/main_wohnung4.jpeg',
+    '../img/map_main.jpeg',
     '../manifest.json',
     '../css/main.min.css',
     '../js/scripts.min.js'
@@ -27,20 +33,11 @@ self.addEventListener('activate', function(e) {
         }));
     return self.clients.claim();
 });
-//
-// self.addEventListener('fetch', function(e) {
-//     e.respondWith(caches.match(e.request)
-//         .then(function(response) {
-//             return response || fetch(e.request)
-//                 .then(function (resp){
-//                     return caches.open(cacheName)
-//                         .then(function(cache){
-//                             cache.put(e.request, resp.clone());
-//                             return resp;
-//                         })
-//                 }).catch(function(event){
-//                     console.log('Error fetching data!');
-//                 })
-//         })
-//     );
-// });
+
+self.addEventListener('fetch', function(e) {
+    event.respondWith(
+        caches.match(event.request).then(function() {
+            return fetch(event.request);
+        })
+    );
+});

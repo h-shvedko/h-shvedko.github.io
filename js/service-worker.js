@@ -2,13 +2,12 @@ var cacheName = 'GR';
 var filesToCache = [
     '/',
     '../index.html',
-    '../fonts/FontAwesome.woff',
     '../img/main_background.jpeg',
     '../img/main_wohnung1.jpeg',
     '../img/main_wohnung2.jpeg',
     '../img/main_wohnung3.jpeg',
     '../img/main_wohnung4.jpeg',
-    '../img/map_main.png',
+    '../img/main_map.png',
     '../manifest.json',
     '../css/main.min.css',
     '../js/scripts.min.js'

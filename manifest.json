@@ -3,5 +3,6 @@
   "short_name": "Gästehaus Roddert",
   "lang": "en-GB",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "theme_color": "#f5f3f5"
 }

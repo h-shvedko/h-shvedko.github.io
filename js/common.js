@@ -1,9 +1,9 @@
-// if ('serviceWorker' in navigator) {
-// navigator.serviceWorker.register('/service-worker.min.js').then(function(registration) {
-// }).catch(function(err) {
-//     console.log('ServiceWorker registration failed: ', err);
-// });
-// }
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.min.js').then(function (registration) {
+    }).catch(function (err) {
+        console.log('ServiceWorker registration failed: ', err);
+    });
+}
 
 $(document).ready(function () {
 
@@ -55,6 +55,7 @@ $(document).ready(function () {
 
     $('#close, .gallery>.overlay').click(function () {
         $('.gallery .overlay').css('opacity', 0);
+        $('.gallery>div>img').attr('src', '');
         $('.gallery').css('visibility', 'hidden');
     });
 });

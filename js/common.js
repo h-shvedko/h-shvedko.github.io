@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     $('#anfahrt').click(function () {
         $("html").animate({
-            scrollTop: $(document).height() - $('.display-main-4')[0].scrollHeight
+            scrollTop: $(document).height() - $('.display-main-4')[0].scrollHeight - $('.display-main-5')[0].scrollHeight - $('.footer')[0].scrollHeight
         }, 1000);
     });
 
@@ -49,8 +49,14 @@ $(document).ready(function () {
     $('.photo-over').click(function (e) {
         var name = $(this).parent().attr('data-name');
         var id = $(this).parent().attr('data-id');
+
+        $("html").animate({
+            scrollTop: 0
+        }, 1000);
+
         $('.gallery').css('visibility', 'visible');
         $('.gallery .overlay').css('opacity', 0.8);
+
         $('.gallery>div>img').attr('src', '/img/' + name + '_page.jpeg');
         $('.gallery>div>img').attr('data-id', id);
     });

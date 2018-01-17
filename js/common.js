@@ -22,13 +22,13 @@ $(document).ready(function () {
         }
     });
 
-    $('#anfrage, .button-anfrage').click(function () {
+    $('#anfrage, .button-anfrage, #anfrage-bottom').click(function () {
         $("html").animate({
             scrollTop: $(document).height() - $('.display-main-5')[0].scrollHeight
         }, 1000);
     });
 
-    $('#anfahrt').click(function () {
+    $('#anfahrt, #anfahrt-bottom').click(function () {
         $("html").animate({
             scrollTop: $(document).height() - $('.display-main-4')[0].scrollHeight - $('.display-main-5')[0].scrollHeight - $('.footer')[0].scrollHeight
         }, 1000);

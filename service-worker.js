@@ -2,6 +2,10 @@ var cacheName = 'GR';
 var filesToCache = [
     '/',
     'index.html',
+    'wohnung1.html',
+    'wohnung2.html',
+    'wohnung3.html',
+    'wohnung4.html',
     '/img/main_background.jpeg',
     '/img/main_wohnung1.jpeg',
     '/img/main_wohnung2.jpeg',

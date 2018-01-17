@@ -15,7 +15,18 @@
 .grid-nav
   display: grid
   grid-template-columns: repeat(9, 1fr)
-  //grid-gap: 5px
+//grid-gap: 5px
+
+.grid-main-items
+  &:nth-child(5)
+    grid-column: 1/2
+    grid-row: 1/2
+  &:nth-child(6)
+    grid-column: 1/2
+    grid-row: 2/3
+  &:nth-child(7)
+    grid-column: 1/2
+    grid-row: 3/4
 
 .grid-item
   &:nth-child(1)
@@ -63,11 +74,10 @@
 .grid-content-wohnung
   display: grid
   grid-template-columns: repeat(4, 1fr)
-  height: 75vh
+  height: 72vh
   text-align: center
   .grid-item
     border: 1px solid $accent
-    //width: 200px
     &:nth-child(1)
       background: url(/img/small_wohnung_page_1.jpeg)
       background-size: cover
@@ -75,6 +85,7 @@
       grid-column: 1/2
       grid-row: 1
     &:nth-child(2)
+      height: 100%
       background-color: $main
       grid-column: 2/4
       grid-row: 1/4
@@ -112,7 +123,7 @@
     padding: 5px 25px
     font-size: 18px
     div
-      margin-bottom: 40px
+      //margin-bottom: 22px
     h1
       font-weight: 400
       color: $font-color-second
@@ -120,7 +131,7 @@
     h2
       font-weight: 400
       font-size: 18px
-      margin-bottom: 0
+      margin: 0
     p
       margin-top: 0
     .preise
@@ -137,7 +148,35 @@
       border: none
     &.active
       box-shadow: inset 0px 1px 3px 2px $shadow-active
-
+  .grid-content
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    grid-gap: 0
+    height: 65vh
+    text-align: center
+    .grid-item
+      background: none
+      border: none
+      height: auto
+      &:nth-child(1)
+        grid-column: 1/2
+        grid-row: 1
+      &:nth-child(2)
+        grid-column: 1/2
+        grid-row: 2
+      &:nth-child(3)
+        grid-column: 1/2
+        grid-row: 3
+      &:nth-child(4)
+        grid-column: 1/2
+        grid-row: 4
+      &:nth-child(5)
+        grid-column: 1/2
+        grid-row: 5
+      &:nth-child(6)
+        grid-column: 1/2
+        grid-row: 7
+        padding: 20px
 
 .grid-footer
   display: grid
@@ -167,6 +206,7 @@
       margin-left: 5em
       line-height: 2.5
       grid-column: 6/7
+
 .footer
   color: #fff
   background-color: $footer-background
@@ -369,12 +409,12 @@
     background-color: $third
     height: 10vh
     opacity: 0.3
-    //filter: blur(2px)
+  //filter: blur(2px)
   div
     text-decoration: none
     color: $main
     z-index: 2
-    //background-color: $third
+  //background-color: $third
   a
     padding-top: 3vh
     text-decoration: none
@@ -442,6 +482,7 @@
   width: 100%
   font-size: 32px
   font-weight: 400
+  z-index: 10
   a
     text-decoration: none
     color: $main
@@ -453,7 +494,6 @@
   h1
     font-size: 32px
     font-weight: 800
-
 
 .display-main-1
   background: url(/img/main_background.jpeg)
@@ -530,6 +570,7 @@
   transition: border .3s
   &:hover
     border: 2px solid $main
+
 .display-main-4
   background-color: $third
   color: $font-color-second
@@ -538,7 +579,6 @@
 .display-main-5
   padding-bottom: 2em
   background-color: $abfrage-background
-
 
 .grid-item-wohnung
   &:nth-child(1)
@@ -676,7 +716,7 @@ input.button-absenden
   &:hover
     cursor: pointer
     border: 1px solid $third
-    >.photo-over
+    > .photo-over
       visibility: visible
       opacity: 0.6
       transition: visibality .5s, opacity .5s
@@ -721,6 +761,18 @@ input.button-absenden
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
+    #left
+      top: 50%
+      left: 20%
+      z-index: 16
+      width: 20px
+      font-size: 50px
+    #right
+      top: 50%
+      right: 20%
+      z-index: 16
+      width: 20px
+      font-size: 50px
     i
       font-size: 30px
       color: $main
@@ -730,4 +782,5 @@ input.button-absenden
       &:hover
         cursor: pointer
 
-@import "media" // Всегда в конце
+@import "media"
+// Всегда в конце

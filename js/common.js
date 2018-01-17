@@ -48,15 +48,46 @@ $(document).ready(function () {
 
     $('.photo-over').click(function (e) {
         var name = $(this).parent().attr('data-name');
+        var id = $(this).parent().attr('data-id');
         $('.gallery').css('visibility', 'visible');
         $('.gallery .overlay').css('opacity', 0.8);
         $('.gallery>div>img').attr('src', '/img/' + name + '_page.jpeg');
+        $('.gallery>div>img').attr('data-id', id);
     });
 
     $('#close, .gallery>.overlay').click(function () {
         $('.gallery .overlay').css('opacity', 0);
         $('.gallery>div>img').attr('src', '');
+        $('.gallery>div>img').attr('data-id', 0);
         $('.gallery').css('visibility', 'hidden');
+    });
+
+    $('#left').click(function (event) {
+        var id = $('.gallery>div>img').attr('data-id');
+        var name = "wohnung";
+        if(id > 1){
+            --id;
+        }
+        if(id === 1 || id === 0){
+            id = 6;
+        }
+
+        $('.gallery>div>img').attr('src', '/img/' + name + id + '_page.jpeg');
+        $('.gallery>div>img').attr('data-id', id);
+    });
+
+    $('#right').click(function (event) {
+        var id = $('.gallery>div>img').attr('data-id');
+        var name = "wohnung";
+        if(id < 6){
+            ++id;
+        }
+        if(id === 6){
+            id = 1;
+        }
+
+        $('.gallery>div>img').attr('src', '/img/' + name + id + '_page.jpeg');
+        $('.gallery>div>img').attr('data-id', id);
     });
 });
 

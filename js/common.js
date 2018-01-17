@@ -1,9 +1,9 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.min.js').then(function (registration) {
-    }).catch(function (err) {
-        console.log('ServiceWorker registration failed: ', err);
-    });
-}
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('/service-worker.min.js').then(function (registration) {
+//     }).catch(function (err) {
+//         console.log('ServiceWorker registration failed: ', err);
+//     });
+// }
 
 $(document).ready(function () {
 

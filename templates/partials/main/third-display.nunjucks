@@ -1,0 +1,49 @@
+<section class="display-main-3">
+    <div class="grid-third-display">
+        <div class="grid-item">
+            <div class="grid wohnung">
+                <div class="grid-item-wohnung">
+                    <h2>Wohnung 1</h2>
+                    <p>für max. 2 Gäste</p>
+                    <a href="/wohnung1.html" class="button-mehr">Mehr</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid wohnung">
+                <div class="grid-item-wohnung">
+                    <h2>Wohnung 2</h2>
+                    <p>für max. 4 Gäste</p>
+                    <a href="/wohnung2.html" class="button-mehr">Mehr</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid wohnung">
+                <div class="grid-item-wohnung">
+                    <h2>Wohnung 3</h2>
+                    <p>für max. 3 Gäste</p>
+                    <a href="/wohnung3.html" class="button-mehr">Mehr</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="grid wohnung">
+                <div class="grid-item-wohnung">
+                    <h2>Wohnung 4</h2>
+                    <p>für max. 3 Gäste</p>
+                    <a href="/wohnung4.html" class="button-mehr">Mehr</a>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-wohnung">
+            <p>Gästehaus</p>
+            <p>Str.0000</p>
+            <p>37000 Göttingen</p>
+            <p>fon: 0000-555555</p>
+            <p class="main-page-email">gastehaus@gmail.de</p>
+            <a class="button-anfrage">Anfrage</a>
+        </div>
+        <div class="overlay-wohnung-background"></div>
+    </div>
+</section>

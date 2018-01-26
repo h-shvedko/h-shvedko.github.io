@@ -1,0 +1,10 @@
+<nav class="navigation grid-nav text-center">
+    <div class="navigation-content grid-item logo">Gästehaus</div>
+    <a class="navigation-content grid-item active" href="/">Home</a>
+    <a id="wohnungen" class="navigation-content grid-item" href="#">Wohnungen</a>
+    <a class="navigation-content grid-item" href="#">Umgebung</a>
+    <a id="anfahrt" class="navigation-content grid-item" href="#">Anfahrt</a>
+    <a class="navigation-content grid-item" href="#">Datenschutzt</a>
+    <a class="navigation-content grid-item" href="#">Impressum</a>
+    <a id="anfrage" class="navigation-content grid-item" href="#">Anfrage</a>
+</nav>

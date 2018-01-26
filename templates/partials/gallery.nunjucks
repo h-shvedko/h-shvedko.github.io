@@ -1,0 +1,12 @@
+<div class="gallery">
+    <div class="overlay">
+    </div>
+    <div>
+        <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
+        <img src="#" />
+        <i id="right" class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+    <div>
+        <i class="fa fa-times" aria-hidden="true" title="close" id="close"></i>
+    </div>
+</div>

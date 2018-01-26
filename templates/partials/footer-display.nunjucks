@@ -1,0 +1,23 @@
+<footer class="footer grid-footer">
+    <div class="logo grid-item">Gästehaus</div>
+    <div class="grid-item">
+        <p>Gästehaus</p>
+        <p>Str.000</p>
+        <p>37000 Göttingen</p>
+        <p>fon: 0000-555555</p>
+        <p class="anfahr-email">gesthaus@gmail.de</p>
+    </div>
+    <div class="grid-item">
+        <p><a href="/">Home</a></p>
+        <p><a href="#">Wohnungen</a></p>
+        <p><a href="#">Umgebubg</a></p>
+    </div>
+    <div class="grid-item">
+        <p><a id="anfahrt-bottom" href="#">Anfahrt</a></p>
+        <p><a href="#">Datenschutzt</a></p>
+        <p><a href="#">Impressum</a></p>
+    </div>
+    <div class="grid-item">
+        <p><a id="anfrage-bottom" href="#">Anfrage</a></p>
+    </div>
+</footer>

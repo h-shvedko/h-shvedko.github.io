@@ -1,0 +1,93 @@
+<section class="display-wohnung-1 grid-main-items">
+    <nav class="navigation grid-nav text-center">
+        <div class="navigation-content grid-item logo">Gästehaus</div>
+        <a class="navigation-content grid-item" href="/">Home</a>
+        <a id="wohnungen" class="navigation-content grid-item active" href="#">Wohnungen</a>
+        <a class="navigation-content grid-item" href="#">Umgebung</a>
+        <a class="navigation-content grid-item" href="#">Anfahrt</a>
+        <a class="navigation-content grid-item" href="#">Datenschutzt</a>
+        <a class="navigation-content grid-item" href="#">Impressum</a>
+        <a id="anfrage" class="navigation-content grid-item" href="#">Anfrage</a>
+    </nav>
+    <section class="grid-second-menu second-menu">
+        <a href="/wohnung1.html" class="grid-item">Wohnung 1</a>
+        <a href="/wohnung2.html" class="grid-item">Wohnung 2</a>
+        <a href="/wohnung3.html" class="grid-item">Wohnung 3</a>
+        <a href="/wohnung4.html" class="grid-item">Wohnung 4</a>
+    </section>
+    <section class="grid-header-breadcreambs">
+        <div class="grid-item"></div>
+        <div class="grid-item breadcreambs">Home / Wohnungen / Wohnung 4</div>
+        <div class="grid-item"></div>
+    </section>
+    <header class="main-header grid-header-wohnung">
+        <div></div>
+        <div class="grid-item grid-content-wohnung">
+            <div class="grid-item photo" data-name="wohnung1" data-id="1">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item wohnung-content">
+                <div class="grid-content">
+                    <h1 class="grid-item">Wohnung 4</h1>
+                    <div class="preise grid-item">
+                        <p>Preise 2018</p>
+                        <p>1 Gast: 55,00 EUR / Nacht</p>
+                        <p>2 Gäste: 65,00 EUR / Nacht</p>
+                    </div>
+                    <div class="info grid-item">
+                        <p>Diese ca. 35 m 2 große Ferienwohnung für max. 2 Gäste befindet sich im Vorderhaus im Erdgeschoss und besteht aus Wohnzimmer, Schlafzimmer mit Doppelbett, Küche und Badezimmer mit Dusche.</p>
+                    </div>
+                    <div class="ausstattung grid-item">
+                        <h2>Ausstattung</h2>
+                        <p>Geschirrspüler, Kaffeemaschine, Toaster, Wasserkocher, Mikrowelle, Backofen, 2 Kochplatten, Kühlschrank, Waschmaschine, LCD-Fernseher, DVD-Player, kostenloser Hotspot zur Internetnutzung</p>
+                    </div>
+                    <div class="weitere-info grid-item">
+                        <p>Die Preise verstehen sich bei Buchung ab 3 Nächten incl. Bettwäsche, Handtücher, Geschirrtücher, Hotspot für Internetnutzung  und Endreinigung.</p>
+                        <p>Buchungen an den Wochenenden sind, bei Mitbringen eigener Bettwäsche und Handtücher, ab 2 Nächten möglich.</p>
+                        <p>Für einen längeren Aufenthalt > 30 Tage, unterbreiten wir Ihnen gerne ein individuelles Angebot auf Anfrage.</p>
+                    </div>
+                    <div class="grid-item">
+                        <a class="button-anfrage">Anfrage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item photo" data-name="wohnung2" data-id="2">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung3" data-id="3">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung4" data-id="4">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung5" data-id="5">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung6" data-id="6">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+        </div>
+        <div class="grid-item languages">
+            <div class="active" title="Wählen die Deutsche Sprache">DE</div>
+            <div title="Wählen die Englische Sprache">EN</div>
+            <div title="Wählen die Französische Sprache">FR</div>
+        </div>
+    </header>
+    <section class="grid-arrow-down-wohnung">
+        <div class="grid-item">
+            <i class="fa fa-long-arrow-down circle arrow-down-wohnung"></i>
+        </div>
+    </section>
+</section>

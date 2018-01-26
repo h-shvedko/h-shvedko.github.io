@@ -1,284 +1,290 @@
 <!DOCTYPE html>
 <html lang="de">
 
-    <head>
-        <title>Wohnung 2</title>
+<head>
+    <title>Wohnung 1</title>
 
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#f5f3f5"/>
-        <meta name="author" content="Gästehaus">
-        <meta name="description" content="Unsere liebevoll eingerichteten Nichtraucher - Ferienwohnungen befinden sich innerhalb des Altstadtwalls in der Innenstadt im Herzen von Göttingen. Damit Sie sich bei uns wohl fühlen, legen wir großen Wert auf eine einladende, freundliche und gemütliche Atmosphäre.">
-        <meta name="robots" content="index, follow">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="application-name" content="Gästehaus">
-        <meta name="apple-mobile-web-app-title" content="Gästehaus">
-        <meta name="msapplication-starturl" content="/">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#f5f3f5"/>
+    <meta name="author" content="Gästehaus">
+    <meta name="description" content="Unsere liebevoll eingerichteten Nichtraucher - Ferienwohnungen befinden sich innerhalb des Altstadtwalls in der Innenstadt im Herzen von Göttingen. Damit Sie sich bei uns wohl fühlen, legen wir großen Wert auf eine einladende, freundliche und gemütliche Atmosphäre.">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Gästehaus">
+    <meta name="apple-mobile-web-app-title" content="Gästehaus">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="manifest" href="manifest.json">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-        <style>
-            body {
-                opacity: 0;
-                overflow-x: hidden;
-            }
-            .preloader{
-                color: white;
-                display: block;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                background-color: #000;
-                z-index: 10;
-            }
-            .preloader-title{
-                font-size: 40px;
-                font-weight: 800;
-                color: white;
-                display: block;
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 10;
-            }
-            .preloader>i{
-                position: fixed;
-                top: 55%;
-                left: 50%;
-                transform: translate(-50%, -55%);
-            }
+    <style>
+        body {
+            opacity: 0;
+            overflow-x: hidden;
+        }
+        .preloader{
+            color: white;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #000;
+            z-index: 10;
+        }
+        .preloader-title{
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+        .preloader>i{
+            position: fixed;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+        }
 
-            html {
-                background-color: #fff;
-            }
-        </style>
-    </head>
+        html {
+            background-color: #fff;
+        }
+    </style>
+</head>
 
-    <body class="grid">
-        <div class="preloader">
-        <div class="preloader-title">Gästehaus</div>
-        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-        <span class="sr-only">Loading...</span>
+<body class="grid">
+
+
+
+<div class="preloader">
+    <div class="preloader-title">Gästehaus</div>
+    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+</div>
+<div class="gallery">
+    <div class="overlay">
     </div>
-        <div class="gallery">
-        <div class="overlay">
-        </div>
-        <div>
-            <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
-            <img src="#" />
-            <i id="right" class="fa fa-angle-right" aria-hidden="true"></i>
-        </div>
-        <div>
-            <i class="fa fa-times" aria-hidden="true" title="close" id="close"></i>
-        </div>
+    <div>
+        <i id="left" class="fa fa-angle-left" aria-hidden="true"></i>
+        <img src="#" />
+        <i id="right" class="fa fa-angle-right" aria-hidden="true"></i>
     </div>
-        <section class="display-wohnung-1 grid-main-items">
-            <nav class="navigation grid-nav text-center">
-                <div class="navigation-content grid-item logo">Gästehaus</div>
-                <a class="navigation-content grid-item" href="/">Home</a>
-                <a id="wohnungen" class="navigation-content grid-item active" href="#">Wohnungen</a>
-                <a class="navigation-content grid-item" href="/umgebung.html">Umgebung</a>
-                <a class="navigation-content grid-item" href="/anfahrt.html">Anfahrt</a>
-                <a class="navigation-content grid-item" href="/datenschutz.html">Datenschutzt</a>
-                <a class="navigation-content grid-item" href="/impressum.html">Impressum</a>
-                <a id="anfrage" class="navigation-content grid-item" href="#">Anfrage</a>
-            </nav>
-            <section class="grid-second-menu second-menu">
-                <a href="/wohnung1.html" class="grid-item">Wohnung 1</a>
-                <a href="/wohnung2.html" class="grid-item">Wohnung 2</a>
-                <a href="/wohnung3.html" class="grid-item">Wohnung 3</a>
-                <a href="/wohnung4.html" class="grid-item">Wohnung 4</a>
-            </section>
-            <section class="grid-header-breadcreambs">
-                <div class="grid-item"></div>
-                <div class="grid-item breadcreambs">Home / Wohnungen / Wohnung 2</div>
-                <div class="grid-item"></div>
-            </section>
-            <header class="main-header grid-header-wohnung">
-                <div></div>
-                <div class="grid-item grid-content-wohnung">
-                    <div class="grid-item photo" data-name="wohnung1" data-id="1">
+    <div>
+        <i class="fa fa-times" aria-hidden="true" title="close" id="close"></i>
+    </div>
+</div>
+<section class="display-wohnung-1 grid-main-items">
+    <nav class="navigation grid-nav text-center">
+        <div class="navigation-content grid-item logo">Gästehaus</div>
+        <a class="navigation-content grid-item" href="/">Home</a>
+        <a id="wohnungen" class="navigation-content grid-item active" href="#">Wohnungen</a>
+        <a class="navigation-content grid-item" href="#">Umgebung</a>
+        <a class="navigation-content grid-item" href="#">Anfahrt</a>
+        <a class="navigation-content grid-item" href="#">Datenschutzt</a>
+        <a class="navigation-content grid-item" href="#">Impressum</a>
+        <a id="anfrage" class="navigation-content grid-item" href="#">Anfrage</a>
+    </nav>
+    <section class="grid-second-menu second-menu">
+        <a href="/wohnung1.html" class="grid-item">Wohnung 1</a>
+        <a href="/wohnung2.html" class="grid-item">Wohnung 2</a>
+        <a href="/wohnung3.html" class="grid-item">Wohnung 3</a>
+        <a href="/wohnung4.html" class="grid-item">Wohnung 4</a>
+    </section>
+    <section class="grid-header-breadcreambs">
+        <div class="grid-item"></div>
+        <div class="grid-item breadcreambs">Home / Wohnungen / Wohnung 2</div>
+        <div class="grid-item"></div>
+    </section>
+    <header class="main-header grid-header-wohnung">
+        <div></div>
+        <div class="grid-item grid-content-wohnung">
+            <div class="grid-item photo" data-name="wohnung1" data-id="1">
                         <span class="photo-over">
                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                         </span>
+            </div>
+            <div class="grid-item wohnung-content">
+                <div class="grid-content">
+                    <h1 class="grid-item">Wohnung 2</h1>
+                    <div class="preise grid-item">
+                        <p>Preise 2018</p>
+                        <p>1 Gast: 65,00 EUR / Nacht</p>
+                        <p>2 Gäste:	75,00 EUR / Nacht</p>
+                        <p>3 Gäste:	85,00 EUR / Nacht</p>
                     </div>
-                    <div class="grid-item wohnung-content">
-                        <div class="grid-content">
-                            <h1 class="grid-item">Wohnung 2</h1>
-                            <div class="preise grid-item">
-                                <p>Preise 2018</p>
-                                <p>1 Gast: 65,00 EUR / Nacht</p>
-                                <p>2 Gäste:	75,00 EUR / Nacht</p>
-                                <p>3 Gäste:	85,00 EUR / Nacht</p>
-                            </div>
-                            <div class="info grid-item">
-                                <p>Diese ca. 50 m2 große Ferienwohnung für max. 3 Gäste befindet sich im Vorderhaus im Dachgeschoß und besteht aus Wohn/Schlafraum (der Schlafbereich mit einem Einzelbett ist durch einen Vorhang getrennt), Schlafzimmer mit 2 Einzelbetten, Küche und Badezimmer mit Dusche.</p>
-                            </div>
-                            <div class="ausstattung grid-item">
-                                <h2>Ausstattung</h2>
-                                <p>Geschirrspüler, Kaffeemaschine, Toaster, Wasserkocher, Mikrowelle, Ceran-Kochfeld, Backofen, Kühl-Gefrierkombination, Fernseher, DVD-Player, Radio, Klimagerät, kostenloser Hotspot zur Internetnutzung</p>
-                            </div>
-                            <div class="weitere-info grid-item">
-                                <p>Die Preise verstehen sich bei Buchung ab 3 Nächten incl. Bettwäsche, Handtücher, Geschirrtücher, Hotspot für Internetnutzung  und Endreinigung.</p>
-                                <p>Buchungen an den Wochenenden sind, bei Mitbringen eigener Bettwäsche und Handtücher, ab 2 Nächten möglich.</p>
-                                <p>Für einen längeren Aufenthalt > 30 Tage, unterbreiten wir Ihnen gerne ein individuelles Angebot auf Anfrage.</p>
-                            </div>
-                            <div class="grid-item">
-                                <a class="button-anfrage">Anfrage</a>
-                            </div>
-                        </div>
+                    <div class="info grid-item">
+                        <p>Diese ca. 50 m2 große Ferienwohnung für max. 3 Gäste befindet sich im Vorderhaus im Dachgeschoß und besteht aus Wohn/Schlafraum (der Schlafbereich mit einem Einzelbett ist durch einen Vorhang getrennt), Schlafzimmer mit 2 Einzelbetten, Küche und Badezimmer mit Dusche.</p>
                     </div>
-                    <div class="grid-item photo" data-name="wohnung2" data-id="2">
-                        <span class="photo-over">
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </span>
+                    <div class="ausstattung grid-item">
+                        <h2>Ausstattung</h2>
+                        <p>Geschirrspüler, Kaffeemaschine, Toaster, Wasserkocher, Mikrowelle, Ceran-Kochfeld, Backofen, Kühl-Gefrierkombination, Fernseher, DVD-Player, Radio, Klimagerät, kostenloser Hotspot zur Internetnutzung</p>
                     </div>
-                    <div class="grid-item photo" data-name="wohnung3" data-id="3">
-                        <span class="photo-over">
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </span>
+                    <div class="weitere-info grid-item">
+                        <p>Die Preise verstehen sich bei Buchung ab 3 Nächten incl. Bettwäsche, Handtücher, Geschirrtücher, Hotspot für Internetnutzung  und Endreinigung.</p>
+                        <p>Buchungen an den Wochenenden sind, bei Mitbringen eigener Bettwäsche und Handtücher, ab 2 Nächten möglich.</p>
+                        <p>Für einen längeren Aufenthalt > 30 Tage, unterbreiten wir Ihnen gerne ein individuelles Angebot auf Anfrage.</p>
                     </div>
-                    <div class="grid-item photo" data-name="wohnung4" data-id="4">
-                        <span class="photo-over">
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="grid-item photo" data-name="wohnung5" data-id="5">
-                        <span class="photo-over">
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="grid-item photo" data-name="wohnung6" data-id="6">
-                        <span class="photo-over">
-                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="grid-item languages">
-                    <div class="active" title="Wählen die Deutsche Sprache">DE</div>
-                    <div title="Wählen die Englische Sprache">EN</div>
-                    <div title="Wählen die Französische Sprache">FR</div>
-                </div>
-            </header>
-            <section class="grid-arrow-down-wohnung">
-                <div class="grid-item">
-                    <i class="fa fa-long-arrow-down circle arrow-down-wohnung"></i>
-                </div>
-            </section>
-        </section>
-        <section class="display-main-5 grid-main-items">
-            <div class="grid-fifth-display">
-                <div class="grid-item">Anfrage</div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="betreff">Betreff *</label>
-                        <input type="text" class="input" name="betreff" id="betreff"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="nachname">Nachname *</label>
-                        <input type="text" class="input" name="nachname" id="nachname"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="vorname">Vorname *</label>
-                        <input type="text" class="input" name="vorname" id="vorname"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="email">E-mail Adresse *</label>
-                        <input type="email" class="input" name="email" id="email"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="text">Text *</label>
-                        <textarea class="textarea" name="text" id="text"></textarea>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="firma">Firma *</label>
-                        <input type="text" class="input" name="firma" id="firma"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="telefon">Telefon</label>
-                        <input type="tel" class="input" name="telefon" id="telefon"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="telefax">Telefax</label>
-                        <input type="tel" class="input" name="telefax" id="telefax"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="street">Straße</label>
-                        <input type="text" class="input" name="street" id="street"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="zipcode">PLZ</label>
-                        <input type="text" class="input" name="zipcode" id="zipcode"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label for="city">Ort</label>
-                        <input type="text" class="input" name="city" id="city"/>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="content">
-                        <label> * - das Pflichtfeld</label>
-                    </div>
-                </div>
                     <div class="grid-item">
-                    <div class="content">
-                        <input type="submit" class="button-absenden" name="send" value="Nachricht absenden"/>
+                        <a class="button-anfrage">Anfrage</a>
                     </div>
                 </div>
+            </div>
+            <div class="grid-item photo" data-name="wohnung2" data-id="2">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung3" data-id="3">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung4" data-id="4">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung5" data-id="5">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+            <div class="grid-item photo" data-name="wohnung6" data-id="6">
+                        <span class="photo-over">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </span>
+            </div>
+        </div>
+        <div class="grid-item languages">
+            <div class="active" title="Wählen die Deutsche Sprache">DE</div>
+            <div title="Wählen die Englische Sprache">EN</div>
+            <div title="Wählen die Französische Sprache">FR</div>
+        </div>
+    </header>
+    <section class="grid-arrow-down-wohnung">
+        <div class="grid-item">
+            <i class="fa fa-long-arrow-down circle arrow-down-wohnung"></i>
+        </div>
+    </section>
+</section>
+<section class="display-main-5">
+    <div class="grid-fifth-display">
+        <div class="grid-item">Anfrage</div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="betreff">Betreff *</label>
+                <input type="text" class="input" name="betreff" id="betreff"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="nachname">Nachname *</label>
+                <input type="text" class="input" name="nachname" id="nachname"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="vorname">Vorname *</label>
+                <input type="text" class="input" name="vorname" id="vorname"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="email">E-mail Adresse *</label>
+                <input type="email" class="input" name="email" id="email"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="text">Text *</label>
+                <textarea class="textarea" name="text" id="text"></textarea>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="firma">Firma *</label>
+                <input type="text" class="input" name="firma" id="firma"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="telefon">Telefon</label>
+                <input type="tel" class="input" name="telefon" id="telefon"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="telefax">Telefax</label>
+                <input type="tel" class="input" name="telefax" id="telefax"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="street">Straße</label>
+                <input type="text" class="input" name="street" id="street"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="zipcode">PLZ</label>
+                <input type="text" class="input" name="zipcode" id="zipcode"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label for="city">Ort</label>
+                <input type="text" class="input" name="city" id="city"/>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <label> * - das Pflichtfeld</label>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="content">
+                <input type="submit" class="button-absenden" name="send" value="Nachricht absenden"/>
+            </div>
+        </div>
 
-            </div>
-        </section>
-        <footer class="footer grid-footer grid-main-items">
-            <div class="logo grid-item">Gästehaus</div>
-            <div class="grid-item">
-                <p>Gästehaus</p>
-                <p>Str.000</p>
-                <p>37000 Göttingen</p>
-                <p>fon: 0000-555555</p>
-                <p class="anfahr-email">gesthaus@gmail.de</p>
-            </div>
-            <div class="grid-item">
-                <p><a href="/">Home</a></p>
-                <p><a href="#">Wohnungen</a></p>
-                <p><a href="/umgebung.html">Umgebubg</a></p>
-            </div>
-            <div class="grid-item">
-                <p><a id="anfahrt-bottom" href="/anfahrt.html">Anfahrt</a></p>
-                <p><a href="/datenschutz.html">Datenschutzt</a></p>
-                <p><a href="/impressum.html">Impressum</a></p>
-            </div>
-            <div class="grid-item">
-                <p><a id="anfrage-bottom" href="#">Anfrage</a></p>
-            </div>
-        </footer>
+    </div>
+</section>
+<footer class="footer grid-footer">
+    <div class="logo grid-item">Gästehaus</div>
+    <div class="grid-item">
+        <p>Gästehaus</p>
+        <p>Str.000</p>
+        <p>37000 Göttingen</p>
+        <p>fon: 0000-555555</p>
+        <p class="anfahr-email">gesthaus@gmail.de</p>
+    </div>
+    <div class="grid-item">
+        <p><a href="/">Home</a></p>
+        <p><a href="#">Wohnungen</a></p>
+        <p><a href="#">Umgebubg</a></p>
+    </div>
+    <div class="grid-item">
+        <p><a id="anfahrt-bottom" href="#">Anfahrt</a></p>
+        <p><a href="#">Datenschutzt</a></p>
+        <p><a href="#">Impressum</a></p>
+    </div>
+    <div class="grid-item">
+        <p><a id="anfrage-bottom" href="#">Anfrage</a></p>
+    </div>
+</footer>
 
-        <link rel="stylesheet" href="css/main.min.css">
-        <script async src="js/scripts.min.js"></script>
-        <script src="service-worker.min.js"></script>
-    </body>
+
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<script async src="js/scripts.min.js"></script>
+<script src="service-worker.min.js"></script>
+</body>
 </html>

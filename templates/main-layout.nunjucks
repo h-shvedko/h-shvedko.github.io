@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Gästehaus in Göttingen</title>
+
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#f5f3f5"/>
+    <meta name="author" content="Gästehaus">
+    <meta name="description" content="Unsere liebevoll eingerichteten Nichtraucher - Ferienwohnungen befinden sich innerhalb des Altstadtwalls in der Innenstadt im Herzen von Göttingen. Damit Sie sich bei uns wohl fühlen, legen wir großen Wert auf eine einladende, freundliche und gemütliche Atmosphäre.">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Gästehaus">
+    <meta name="apple-mobile-web-app-title" content="Gästehaus">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            opacity: 0;
+            overflow-x: hidden;
+        }
+        .preloader{
+            color: white;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #000;
+            z-index: 10;
+        }
+        .preloader-title{
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+        .preloader>i{
+            position: fixed;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+        }
+
+        html {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+{% block content %}
+
+{% include "partials/preloader.nunjucks" %}
+{% include "partials/main/first-display.nunjucks" %}
+{% include "partials/main/second-display.nunjucks" %}
+{% include "partials/main/third-display.nunjucks" %}
+{% include "partials/main/forth-display.nunjucks" %}
+{% include "partials/fifth-display.nunjucks" %}
+{% include "partials/footer-display.nunjucks" %}
+
+{%endblock%}
+
+<link rel="stylesheet" href="css/main.min.css">
+<script async src="js/scripts.min.js"></script>
+<script async src="service-worker.min.js"></script>
+</body>
+</html>

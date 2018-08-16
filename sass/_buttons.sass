@@ -1,0 +1,60 @@
+@import "vars"
+
+/* buttons */
+.button-default
+  width: 7.3em
+  border-radius: 55px
+  font-size: 2em
+  cursor: pointer
+  transition: background-color 1s
+
+.button-padding
+  padding: .7em 1.9em
+
+.button-weiter
+  @extend .button-default
+  color: $forth
+  border: 2px $forth solid
+  font-weight: 800
+  padding: .5em 1.9em
+  &:hover
+    background-color: $accent
+    color: $main
+
+.button-mehr
+  @extend .button-default
+  @extend .button-padding
+  text-decoration: none
+  color: $main
+  border: 1px $main solid
+  font-weight: 400
+  z-index: 15
+  &:hover
+    background-color: $accent
+    color: $main
+
+.button-anfrage
+  @extend .button-default
+  @extend .button-padding
+  color: $main
+  font-weight: 600
+  background-color: $accent
+  transition: border .3s
+  &:hover
+    border: 2px solid $main
+
+input.button-absenden
+  @extend .button-default
+  font-size: 1.5em
+  padding: 0 1em
+  color: $main
+  width: auto
+  border: 0
+  font-weight: 400
+  z-index: 1
+  background-color: $third
+  transition: background-color 1s, border 1s
+  &:hover
+    background-color: $accent
+    color: $main
+    border: 1px $main solid
